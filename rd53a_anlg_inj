@@ -817,8 +817,8 @@ int main(void) {
             case 3 : const_V_cal(VcalHigh,VcalMed, &fe); break;
             case 4 : const_V_cal_double(VcalHigh,VcalMed, &fe); break;
             case 5 : step_clmns(fe_flavor, gain, &fe); break;
-            case 6 : step_VFF(fe_flavor, gain, &fe); break;
-            case 7 : const_V_cal_and_VFF(fe_flavor, gain, &fe); break;
+            case 6 : const_V_cal_and_VFF(fe_flavor, gain, &fe); break;
+            case 7 : step_VFF(fe_flavor, gain, &fe); break;
             default : std::cout << "Not a valid option."; option_valid = false; break;
         }
     }
